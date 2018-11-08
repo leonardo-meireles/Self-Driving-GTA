@@ -1,3 +1,5 @@
 numpy==1.14.5
 asposebarcode==1.0.0
 mss==3.3.1
+tensorflow
+tflearn

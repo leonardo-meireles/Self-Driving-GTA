@@ -108,3 +108,4 @@ __pycache__/
 *.tflearn*
 checkpoint
 trained_models/log/*
+*.zip
