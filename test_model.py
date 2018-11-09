@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 import time
-from models.alexnet import alexnet
+from models import alexnet
 from utils import timer
 import mss
 import random
@@ -12,6 +12,7 @@ WIDTH = 160
 HEIGHT = 120
 LR = 1e-3
 EPOCHS = 10
+BATCH_SIZE = 128
 MODEL_NAME = 'gta_model_%s_%s_%s.tflearn'
 
 
@@ -21,7 +22,7 @@ keys.start()
 def main():
 	model = alexnet(WIDTH, HEIGHT, LR)
 	#model.load('trained_models/' + MODEL_NAME % ('alexnet', EPOCHS, DATA_TYPE))
-	model.load('trained_models/model.tflearn')    
+	model.load('model/model.tflearn')    
 	timer(5)
 
 	# 800x600 windowed mode

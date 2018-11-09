@@ -33,7 +33,7 @@ def main(id, n_files):
             model.fit({'input': X}, {'targets': Y}, n_epoch=1, validation_set=({'input': test_x}, {'targets': test_y}),
                       snapshot_step=500, show_metric=True, run_id='model_%s_%s_%s' % ('alexnetAdam', EPOCHS, id))
 
-            model.save('trained_models/model.tflearn')
+            model.save('model/model.tflearn')
 
         # tensorboard --logdir=foo:C:/path/to/log
 
