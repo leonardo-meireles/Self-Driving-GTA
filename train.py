@@ -2,7 +2,7 @@ import numpy as np
 from models import alexnetAdam, alexnet
 import sys
 from utils import load_data
-import tflearn as tf
+import tensorflow as tf
 
 WIDTH = 160
 HEIGHT = 120
