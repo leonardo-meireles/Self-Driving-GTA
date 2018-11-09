@@ -6,7 +6,9 @@ from cv2 import cv2
 from utils import load_data
 
 def main():
-    train_data = load_data('data/raw/training_data_%s.npy')
+    train_data = load_data('data/raw/training_data_%s.npy', 0)
+    train_data += load_data('data/gta5/training_data-%s-balanced.npy', 1)
+    
     print(len(train_data))
 
     A = []
@@ -42,7 +44,7 @@ def main():
     size_partition = int(0.2*total_size)
 
     part = 0
-    while part*size_partition <= total_size:
+    while (total_size > 0) and part*size_partition <= total_size:
         np.save('data/balanced/balanced_data_%s.npy' % part,
                 final_data[part*size_partition: (part*size_partition) + size_partition])
         part += 1

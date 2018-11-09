@@ -8,7 +8,7 @@ def timer(secs):
 		time.sleep(1)
 
 
-def load_data(filename):
+def load_data(filename, count):
 	"""Filename example: 'data/raw/training_data_%s.npy'
 	Arguments:
 		filename str
@@ -16,13 +16,11 @@ def load_data(filename):
 	Returns:
 		data - np data
 	"""
-
-	count = 0
 	data = []
 
 	while True:
 		try:
-			print('Loading file with count %s' % count)
+			print(filename % count)
 			cur_data = list(np.load(filename % count))
 			data.extend(cur_data)
 			count += 1
