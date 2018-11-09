@@ -1,5 +1,5 @@
 import numpy as np
-from models import alexnetAdam
+from models import alexnetAdam, alexnet
 import sys
 from utils import load_data
 
@@ -12,7 +12,7 @@ BATCH_SIZE = 64
 
 def main(id, n_files):
     n_files = int(n_files)
-    model = alexnetAdam(WIDTH, HEIGHT, LR, BATCH_SIZE)
+    model = alexnet(WIDTH, HEIGHT, LR, BATCH_SIZE)
     train_data = load_data('data/balanced/balanced_data_%s.npy', 0)
     
     for i in range(EPOCHS):
