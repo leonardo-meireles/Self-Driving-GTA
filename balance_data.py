@@ -7,7 +7,7 @@ from utils import load_data
 
 def main():
     train_data = load_data('data/raw/training_data_%s.npy', 0)
-    train_data += load_data('data/gta5/training_data-%s-balanced.npy', 1)
+    #train_data += load_data('data/gta5/training_data-%s-balanced.npy', 1)
     
     print(len(train_data))
 
