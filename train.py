@@ -2,6 +2,7 @@ import numpy as np
 from models import alexnetAdam, alexnet
 import sys
 from utils import load_data
+import tflearn as tf
 
 WIDTH = 160
 HEIGHT = 120
@@ -9,6 +10,11 @@ LR = 1e-3
 EPOCHS = 10
 BATCH_SIZE = 64
 
+
+config = tf.ConfigProto(allow_soft_placement=True)
+config.gpu_options.allocator_type = 'BFC'
+config.gpu_options.per_process_gpu_memory_fraction = 0.80
+config.gpu_options.allow_growth = True
 
 def main(id, n_files):
     n_files = int(n_files)
