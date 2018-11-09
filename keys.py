@@ -75,5 +75,5 @@ def stop():
     key.release_key(character='d')
     key.release_key(character='a')
     key.press_key(character='s')
-    time.sleep(t_time/3)
+    time.sleep(t_time/3.5)
     key.release_key(character='s')
