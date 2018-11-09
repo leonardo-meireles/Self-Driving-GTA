@@ -6,7 +6,7 @@ from utils import load_data
 WIDTH = 160
 HEIGHT = 120
 LR = 1e-3
-EPOCHS = 1
+EPOCHS = 10
 BATCH_SIZE = 64
 
 
