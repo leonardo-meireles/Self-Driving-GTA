@@ -60,11 +60,11 @@ def alexnet(width, height, lr, batch=64):
     network = fully_connected(network, 3, activation='softmax')
     # End Layers
 
-    network = regression(network, optimizer='momentum',
+    network = regression(network, optimizer='momentum', batch_size=batch,
                          loss='categorical_crossentropy',
                          learning_rate=lr, name='targets')
 
-    model = tflearn.DNN(network, tensorboard_verbose=2, batch_size=batch,
+    model = tflearn.DNN(network, tensorboard_verbose=2,
                         tensorboard_dir='trained_models/log')
 
     return model
