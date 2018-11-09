@@ -7,7 +7,7 @@ import tensorflow as tf
 WIDTH = 160
 HEIGHT = 120
 LR = 1e-3
-EPOCHS = 10
+EPOCHS = 40
 BATCH_SIZE = 64
 
 
