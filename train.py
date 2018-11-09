@@ -35,7 +35,7 @@ def main(id, n_files):
         test_y = [i[1] for i in test]
 
         model.fit({'input': X}, {'targets': Y}, n_epoch=1, validation_set=({'input': test_x}, {'targets': test_y}),
-                      snapshot_step=500, show_metric=True, run_id='model_%s_%s_%s' % ('alexnetAdam', EPOCHS, id))
+                      snapshot_step=500, show_metric=True, run_id='model_%s_%s_%s' % ('alexnet', EPOCHS, id))
 
         model.save('model/model.tflearn')
 
