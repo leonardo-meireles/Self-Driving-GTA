@@ -55,7 +55,7 @@ def main():
 			if prediction[1] > fwd_thresh:
 				count_dk = 0
 				count_st += 1
-				if count_st > 2:
+				if count_st > 1:
 					print('STOP ST')
 					stop()
 					count_st = 0
@@ -78,7 +78,7 @@ def main():
 				count_dk += 1
 				count_st = 0
 				
-				if count_dk > 4:
+				if count_dk > 3:
 					print('STOP DK')
 					stop()
 					count_dk = 0

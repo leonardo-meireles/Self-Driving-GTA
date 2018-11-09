@@ -31,7 +31,7 @@ def straight():
     key.press_key(character='w')
     key.release_key(character='a')
     key.release_key(character='d')
-    time.sleep(t_time)
+    time.sleep(t_time/2)
     key.release_key(character='w')
 
 
@@ -74,4 +74,6 @@ def stop():
     key.release_key(character='w')
     key.release_key(character='d')
     key.release_key(character='a')
+    key.press_key(character='s')
     time.sleep(t_time/3)
+    key.release_key(character='s')
