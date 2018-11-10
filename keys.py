@@ -64,7 +64,6 @@ def right():
     
     time.sleep(t_time)
     key.release_key(character='d')
-    #key.release_key(character='w')
     key.press_key(character='w')
     time.sleep(t_time/3.5)
     key.release_key(character='w')
@@ -75,5 +74,5 @@ def stop():
     key.release_key(character='d')
     key.release_key(character='a')
     key.press_key(character='s')
-    time.sleep(t_time/3.5)
+    time.sleep(t_time/4)
     key.release_key(character='s')
