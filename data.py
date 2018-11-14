@@ -80,9 +80,8 @@ def show(file):
 
 
 def main(version):
-    #for i in range(3):
-    #    show("training_data_%s.npy" % i)
-    #show('data/balanced/balanced_data_mix_big.npy')
+    # For displaying collected data
+    #show('data/balanced/balanced_data_0.npy')
     collect(filename % version)
 
 

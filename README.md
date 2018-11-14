@@ -5,9 +5,13 @@ A self driving agent that uses Deep Learning to control cars in video games like
 # Problem
 Given a environment situation (usually game frames), the agent will have to be able 
 
+# Data used
+https://drive.google.com/open?id=1ky-Iv5pXcMbQ8MBU-nW_oVEphq7KyRya
 
-# TOKEN GIT
+# Pre Trained Model
+https://drive.google.com/open?id=1zWR9_1rGy1_XUqHPa4T6Wsywgr3PUzpB
 
-git clone https://9d5418792e8aa8bcac4b86ed354d13892461e31c@github.com/leoMurtha/Self-Driving-GTA.git
-
-wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=FILEID' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=FILEID" -O FILENAME && rm -rf /tmp/cookies.txt
+# How to
+ * train for training on collected data
+ * test for testing on saved model
+ * data for collecting data
