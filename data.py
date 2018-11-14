@@ -1,7 +1,6 @@
 from cv2 import cv2
 import numpy as np
 import utils
-import image
 import mss
 import os
 import time
